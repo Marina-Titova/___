@@ -94,7 +94,7 @@ def main():
         command = int(input('1. Узнать самого популярного автора за год\n'
                             '2. Узнать самого злостного читателя\n3. Выход\n'))
         if command == 1:
-            year = int(input('Введите год: '))
+            year = int(input('Введите год (предлагается ввести "2018", так как в базе есть данные только за 2018 год): '))
             print(Student.books_issued_for_year(year))
         if command == 2:
             print(Student.bookworm())
